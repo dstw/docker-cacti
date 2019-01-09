@@ -15,6 +15,22 @@ To install docker in Ubuntu 18.04 use the commands:
 
  To install docker in other operating systems check [docker online documentation][4]
 
+## Setup and run
+
+    $ cd docker-cacti/
+    $ cp web-variables.env .web-variables.env
+
+Edit .web-variables.env to conform with MySQL and Apache configuration.  
+Copy existing rrd files to rra directory.
+
+    $ cp source_dir_rra/* rra/*
+
+Run with:
+
+    $ docker-compose up -d
+
+Access site on URL: http://{server-name|server-ip}/
+
 ## Built-in plugin
 
 Included three additional plugin:

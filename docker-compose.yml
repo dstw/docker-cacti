@@ -2,7 +2,10 @@ version: "3"
 
 services:
   cacti:
-    image: dstw/cacti:1
+#   image: dstw/cacti:1
+    build:
+      context: .
+    image: dstw/cacti:2
     container_name: cacti
     env_file:
      - .web-variables.env
