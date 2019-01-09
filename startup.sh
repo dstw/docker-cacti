@@ -25,6 +25,8 @@ else
         sed -i 's/APACHE_SRV_ADMIN/'"${APACHE_SRV_ADMIN}"'/g' /etc/apache2/sites-available/000-default.conf
 	service apache2 restart
 
+	chown -R www-data:www-data /usr/share/cacti/rra
+
         update-locale 
         date > /etc/configured
 fi
