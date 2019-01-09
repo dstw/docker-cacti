@@ -19,9 +19,9 @@ To install docker in Ubuntu 18.04 use the commands:
 
 Included three additional plugin:
 
- scripts/http_response_time.pl: to check HTTP response time from a URL
- scripts/http_status_code.pl: to check HTTP status code from a URL
- scripts/postgresql.php: to count active query session on PGSQL DB
+ scripts/http_response_time.pl: to check HTTP response time from a URL  
+ scripts/http_status_code.pl: to check HTTP status code from a URL  
+ scripts/postgresql.php: to count active query session on PGSQL DB  
 
 ## More Info
 

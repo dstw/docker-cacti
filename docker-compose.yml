@@ -2,15 +2,12 @@ version: "3"
 
 services:
   cacti:
-    build:
-      context: .
-      args:
-        - cacti_ver=1.1.38
+    image: dstw/cacti:1
+    container_name: cacti
     env_file:
      - .web-variables.env
     ports:
-     - "8000:80"
-#    - "161:161"
+     - "80:80"
     volumes:
      - /etc/localtime:/etc/localtime:ro
      - ./rra/:/usr/share/cacti/rra
