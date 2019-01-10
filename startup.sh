@@ -24,7 +24,7 @@ else
         sed -i 's/APACHE_SRV_ALIAS/'"${APACHE_SRV_ALIAS}"'/g' /etc/apache2/sites-available/000-default.conf
         sed -i 's/APACHE_SRV_ADMIN/'"${APACHE_SRV_ADMIN}"'/g' /etc/apache2/sites-available/000-default.conf
 
-	sed -i 's/session.gc_maxlifetime\ =\ 1440/session.gc_maxlifetime\ =\ 0/g' /etc/php/7.2/apache2/php.ini
+	sed -i 's/session.gc_maxlifetime\ =\ 1440/session.gc_maxlifetime\ =\ 1440000000/g' /etc/php/7.2/apache2/php.ini
 
 	service apache2 restart
 
